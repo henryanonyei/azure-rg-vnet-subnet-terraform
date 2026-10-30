@@ -1,11 +1,11 @@
 variable "Project_Name" {
-    type = string
+  type = string
 }
 variable "Environment" {
-    type = string
-  
+  type = string
+
 }
 variable "location" {
-    type = string
-  
+  type = string
+
 }

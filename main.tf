@@ -5,7 +5,7 @@ terraform {
       version = "~> 4.1.0"
     }
   }
-  
+
 }
 provider "azurerm" {
   features {}
@@ -17,12 +17,12 @@ resource "azurerm_resource_group" "environmentrg" {
   location = var.location
   tags = {
     Environment = var.Environment
-    owner = "henry_anonyei"
+    owner       = "henry_anonyei"
   }
 }
-resource random_string vnet_suffix {
-  length = 6
-  upper = false
+resource "random_string" "vnet_suffix" {
+  length  = 6
+  upper   = false
   special = false
 }
 
