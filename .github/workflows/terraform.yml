@@ -36,3 +36,7 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -input=false
+        env:
+          TF_VAR_Project_Name: "monitoring"
+          TF_VAR_Environment: "dev"
+          TF_VAR_location: "eastus"
