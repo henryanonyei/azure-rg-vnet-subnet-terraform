@@ -1,11 +1,17 @@
 variable "Project_Name" {
-  type = string
+  description = "Short name used as a prefix for all resource names"
+  type        = string
+  default     = "monitoring"
 }
+
 variable "Environment" {
-  type = string
-
+  description = "Deployment environment"
+  type        = string
+  default     = "dev"
 }
-variable "location" {
-  type = string
 
+variable "location" {
+  description = "Azure region to deploy resources into"
+  type        = string
+  default     = "eastus"
 }
